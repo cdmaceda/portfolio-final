@@ -9,6 +9,7 @@ import { LogoRedesComponent } from './components/header/logo-redes/logo-redes.co
 import { BannerComponent } from './components/header/banner/banner.component';
 import { LoginComponent } from './components/header/login/login.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+import { InformacionComponent } from './components/acerca-de/informacion/informacion.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
     LogoRedesComponent,
     BannerComponent,
     LoginComponent,
-    AcercaDeComponent
+    AcercaDeComponent,
+    InformacionComponent
   ],
   imports: [
     BrowserModule,
