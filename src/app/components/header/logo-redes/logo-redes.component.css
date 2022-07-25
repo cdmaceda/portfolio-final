@@ -1,4 +1,9 @@
 img{
-    width: 40px;
-    margin-right: 10px;
+    width: 50px;
+}
+div{
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+
 }

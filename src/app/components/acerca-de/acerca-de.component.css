@@ -1,0 +1,10 @@
+.container{
+    background-color: #5274fd;
+    
+}
+img{
+    width: 200px;
+    border-radius: 2000px;
+    position: absolute;
+    top: 500px;
+}
