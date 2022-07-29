@@ -1,9 +1,26 @@
+
 img{
     width: 50px;
-}
-div{
-    float: right;
-    margin-top: 10px;
-    margin-right: 15px;
+    float: right; 
+    margin-top: 20px;
+    
+} 
 
+app-login{
+    float: right;
+    margin-top: 26px;
+}
+ 
+@media (max-width: 454px) {
+    img{
+        width: 40px;
+        float: right;
+        margin-top: 12px;
+     }
+     
+} 
+@media (max-width: 454px) {
+    app-login{
+        margin-top: 15px;
+     }
 }

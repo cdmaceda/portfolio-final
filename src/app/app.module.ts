@@ -10,6 +10,8 @@ import { BannerComponent } from './components/header/banner/banner.component';
 import { LoginComponent } from './components/header/login/login.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { InformacionComponent } from './components/acerca-de/informacion/informacion.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { InformacionComponent } from './components/acerca-de/informacion/informa
     BannerComponent,
     LoginComponent,
     AcercaDeComponent,
-    InformacionComponent
+    InformacionComponent,
+    ExperienciaComponent,
+    EducacionComponent
   ],
   imports: [
     BrowserModule,

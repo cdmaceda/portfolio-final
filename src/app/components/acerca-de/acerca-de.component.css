@@ -1,10 +1,37 @@
-.container{
-    background-color: #5274fd;
-    
-}
+
 img{
+    
     width: 200px;
-    border-radius: 2000px;
-    position: absolute;
-    top: 500px;
+    border-radius: 100px;
+}
+
+div{
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #5274fd; 
+    border-bottom: 2px solid #333;
+    height:0;
+    }
+
+    h1{
+        color: #5274fd;
+    }
+
+    .info{
+        color: #5274fd;
+        margin-left: 10px;
+    }
+
+.nombre{
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.nivel{
+    font-size: x-large;
+    text-align: center;
 }
