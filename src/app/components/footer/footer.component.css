@@ -1,0 +1,17 @@
+.row{
+    background-color: #5274fd;
+}
+img{
+    width: 150px;
+}
+
+@media (max-width: 454px) {
+    img{
+        width: 100px;
+     }
+} 
+span{
+    float: right;
+}
+
+

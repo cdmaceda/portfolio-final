@@ -7,3 +7,10 @@ h2{
     color: #5274fd ;
     padding-bottom: 20px;
 }
+
+hr {
+    border: 0;
+    border-top: 2px solid #5274fd; 
+    border-bottom: 2px solid #333;
+    height:0;
+    }
