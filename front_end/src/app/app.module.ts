@@ -18,6 +18,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './components/home/home.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HomeComponent } from './components/home/home.component';
     HabilidadesComponent,
     ProyectosComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
