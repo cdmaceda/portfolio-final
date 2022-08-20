@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
 
-/*const TOKEN_KEY = 'AuthToken';
+const TOKEN_KEY = 'AuthToken';
 const USERNAME_KEY = 'AuthUsername';
-const AUTORITIES_KEY = 'AuthAutorities';*/
+const AUTORITIES_KEY = 'AuthAutorities';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TokenService {
-  /*roles: Array<string> = [];*/
+  roles: Array<string> = [];
 
   constructor() { }
 
-  /*public setToken(token: string): void{
+  public setToken(token: string): void{
     window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.setItem(TOKEN_KEY, token);
   }
@@ -47,7 +47,7 @@ export class TokenService {
 
   public logOut(): void{
     window.sessionStorage.clear();
-  }*/
+  }
   
 
 
