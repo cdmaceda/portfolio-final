@@ -32,6 +32,7 @@ export class EducacionComponent implements OnInit {
   delete(id?: number){
     if(id != undefined){
       this.educacionS.delete(id).subscribe(data =>{
+        alert("Educacion eliminada correctamente");
         this.cargarEducacion();
       }, err =>{
         alert("No se pudo eliminar educacion");

@@ -1,51 +1,27 @@
-<div class="conteiner">
+<div class="row">
     <h3>Proyectos</h3>
-    <div class="row">
-        
-        <div class="col-sm-12 col-md-4 col-lg-4">
-            <div>
-                <h5>Portfolio Personal <span>Año-2022</span></h5>
-            </div>
-            <div>
-                <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, assumenda neque nesciunt, voluptatibus ipsa labore rerum laudantium mollitia adipisci dolore reiciendis expedita. In nisi ipsam et nam perferendis non distinctio.
-                </P>
-            </div>
-            <div>
-                <a href="#">
-                    <img class="img-fluid" src="../../../assets/imagenes/Proyectos/portfolio.jpg" alt="Proyecto Portfolio">
-                </a>
-            </div>
-        </div>   
-        <div class="col-sm-12 col-md-4 col-lg-4">
-            <div>
-                <h5>Contador de Cosas <span>Año-2022</span></h5>
-            </div>
-            <div>
-                <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, assumenda neque nesciunt, voluptatibus ipsa labore rerum laudantium mollitia adipisci dolore reiciendis expedita. In nisi ipsam et nam perferendis non distinctio.
-                </P>
-            </div>
-            <div>
-                <a href="#">
-                    <img class="img-fluid" src="../../../assets/imagenes/Proyectos/contador de pasos.jpg" alt="Contador de cosas">
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4">
-            <div>
-                <h5>Lista de Tareas <span>Año-2022</span></h5>
-            </div>
-            <div>
-                <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, assumenda neque nesciunt, voluptatibus ipsa labore rerum laudantium mollitia adipisci dolore reiciendis expedita. In nisi ipsam et nam perferendis non distinctio.
-                </P>
-            </div>
-            <div>
-                <a href="#">
-                    <img class="img-fluid" src="../../../assets/imagenes/Proyectos/lista de tareas.jpg" alt="Lista de tareas">
-                </a>
-            </div>
-        </div>    
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-primary" routerLink="/nuevopro" *ngIf="isLogged">
+            Añadir proyecto
+        </button>
+    </div> 
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyecto of proyecto">
+                    <td class="col-lg-3"><h6>{{Proyecto.nombreP}}</h6></td>
+                    <td class="col-lg-7"> {{Proyecto.descripcionP}}</td>
+                    <td class="col-lg-1" *ngIf="isLogged"><button class="btn btn-primary" routerLink="/editpro/{{Proyecto.id}} ">
+                        <i class="bi bi-pencil-fill"></i></button></td>
+                        
+                    <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                        <i class="bi bi-trash"></i></button></td>
+                </tr>
+            </tbody>
+
+        </table>
+
     </div>
+
 </div>
