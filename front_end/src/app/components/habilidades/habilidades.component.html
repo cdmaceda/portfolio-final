@@ -1,8 +1,26 @@
+<div>
+  <div>
+    <h2>Habilidades duras y blandas</h2>
+    
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary" routerLink="/nuevahabi" *ngIf="isLogged">
+      Añadir habilidad
+    </button>
+  </div>
+</div>
+
+
 <div class="row">
-    <hr><h2>Habilidades duras y blandas</h2>
-    <div class="col-sm-4 col-md-4 col-lg-4">
+ 
+   
+    <div *ngFor="let Habilidades of habilidades" class="col-sm-4 col-md-4 col-lg-4">
+      <button class="btn btn-outline-primary" routerLink="/edithabi/{{Habilidades.id}} ">
+        <i class="bi bi-pencil-fill"></i></button>
+    <button class="btn btn-outline-danger" (click)="delete(Habilidades.id)">
+        <i class="bi bi-trash"></i></button>
         <circle-progress
-        [percent]="70"
+        [percent]="Habilidades.porcentajeH"
         [radius]="70"
         [outerStrokeWidth]="16"
         [innerStrokeWidth]="8"
@@ -15,7 +33,7 @@
         [showInnerStroke]="false"
         [innerStrokeColor]="'#1e96fc'"
         [titleColor]="'#5274fd'"
-        [subtitle]="'HTML'"
+        [subtitle]="Habilidades.descripcionH"
         [subtitleFontSize]="'20'"
         [subtitleColor]="'#5274fd'"
         [unitsColor]="'#5274fd'"
@@ -27,7 +45,26 @@
         [animationDuration]="700"
       ></circle-progress>
     </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <!-- <div class="col-sm-4 col-md-4 col-lg-4">
         <circle-progress
         [percent]="60"
         [radius]="70"
@@ -242,5 +279,5 @@
         [animation]="true"
         [animationDuration]="700"
       ></circle-progress>
-    </div>
+    </div> -->
 </div>

@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row"> 
     <h3>Proyectos</h3>
     <div class="col-lg-2">
         <button type="button" class="btn btn-primary" routerLink="/nuevopro" *ngIf="isLogged">
@@ -24,4 +24,96 @@
 
     </div>
 
+</div> -->
+
+
+<!-- <div class="conteiner"> -->
+
+
+<!-- -------------------------------------------------------------- -->
+
+
+
+<hr>
+<div class="flex">
+    <div>
+        <h3>Proyectos</h3>
+    </div>
+
+    <div>
+        <button type="button" class="btn btn-primary" routerLink="/nuevopro" *ngIf="isLogged">
+            Añadir proyecto
+        </button>
+    </div>
 </div>
+<div class="row">
+    <div *ngFor="let Proyecto of proyecto" class="col-sm-12 col-md-4 col-lg-4">
+        <div>
+            <button class="btn btn-outline-primary" routerLink="/editpro/{{Proyecto.id}} ">
+                <i class="bi bi-pencil-fill"></i></button>
+            <button class="btn btn-outline-danger" (click)="delete(Proyecto.id)">
+                <i class="bi bi-trash"></i></button>
+            <h5>{{Proyecto.nombreP}}</h5>
+           
+        </div>
+        <div>
+            <p>{{Proyecto.descripcionP}} </p>
+        </div>
+        <div>
+            <a href="#">
+                <img class="img-fluid" src="../../../assets/imagenes/Proyectos/portfolio.jpg"
+                    alt="Proyecto Portfolio">
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    
+        
+
+
+
+
+
+
+    <!-- <div class="col-sm-12 col-md-4 col-lg-4">
+            <div>
+                <h5>Contador de Cosas <span>Año-2022</span></h5>
+            </div>
+            <div>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, assumenda neque nesciunt,
+                    voluptatibus ipsa labore rerum laudantium mollitia adipisci dolore reiciendis expedita. In nisi
+                    ipsam et nam perferendis non distinctio.
+                </P>
+            </div>
+            <div>
+                <a href="#">
+                    <img class="img-fluid" src="../../../assets/imagenes/Proyectos/contador de pasos.jpg"
+                        alt="Contador de cosas">
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div>
+                <h5>Lista de Tareas <span>Año-2022</span></h5>
+            </div>
+            <div>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, assumenda neque nesciunt,
+                    voluptatibus ipsa labore rerum laudantium mollitia adipisci dolore reiciendis expedita. In nisi
+                    ipsam et nam perferendis non distinctio.
+                </P>
+            </div>
+            <div>
+                <a href="#">
+                    <img class="img-fluid" src="../../../assets/imagenes/Proyectos/lista de tareas.jpg"
+                        alt="Lista de tareas">
+                </a>
+            </div>
+        </div>
+    </div>
+</div> -->

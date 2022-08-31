@@ -4,7 +4,21 @@
 }
 
 h3{
-    padding-left: 70px;
-    padding-bottom: 30px;
+    /* padding-left: 70px;
+    padding-bottom: 30px; */
     color: #5274fd;
 }
+
+hr {
+    border: 0;
+    border-top: 2px solid #5274fd; 
+    border-bottom: 2px solid #333;
+    height:0;
+    }
+
+    /* .flex{
+        display: flex;
+
+    } */
+
+
